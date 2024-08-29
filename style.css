@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Nue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-1 {
+  background-color: #242225;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* start of description */
+.description {
+  width: 33.33%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description .nama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+
+.description .nama > h1 {
+  font-size: 6.5rem;
+  color: white;
+}
+
+.description .hr-1 {
+  width: 35%;
+  margin-top: 80px;
+  margin-left: 60px;
+  height: 0;
+}
+
+.description .hr-2 {
+  width: 35%;
+  margin-left: 60px;
+  height: 0;
+}
+.description > h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 60px;
+}
+
+.description > h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 60px;
+}
+/* end of description */
+
+/* start of foto */
+.foto {
+  width: 33.33%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+.foto > img {
+  width: 100%;
+  height: 100%;
+}
+/* end of foto */
+
+/* start of bio */
+.bio {
+  width: 33.33%;
+  height: auto;
+  padding: 30px;
+}
+
+.bio h2 {
+  margin-top: 70px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.bio p {
+  font-size: 1rem;
+  color: white;
+  margin-top: 10px;
+  line-height: 2;
+  text-align: justify;
+}
+
+/* end of page-1 */
+
+.page-2 {
+  background-color: #7a12ad;
+  width: 100%;
+  height: 200vh;
+  display: flex;
+}
+
+.experience {
+  background-color: #e7dac7;
+  width: 40%; /* Kolom experience mengambil 60% lebar */
+  height: 100%;
+}
+
+.contact {
+  background-color: #ebebeb;
+  width: 60%; /* Kolom contact mengambil 40% lebar */
+  height: 100%;
+}
