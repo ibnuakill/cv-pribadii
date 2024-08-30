@@ -117,14 +117,144 @@ body {
   display: flex;
 }
 
-.experience {
+.left {
   background-color: #e7dac7;
-  width: 40%; /* Kolom experience mengambil 60% lebar */
+  width: 40%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left .contact {
+  width: 80%;
+  height: auto;
+  padding: 50px;
 }
 
 .contact {
+  padding: 10px;
+  width: 200px;
+  margin: 5px;
+}
+
+.contact h4 {
+  padding: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.contact hr {
+  border: 1px solid #000;
+  margin-bottom: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  font-size: 35px;
+  margin-right: 35px;
+}
+
+.contact-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-text p:first-child {
+  font-weight: bold;
+}
+
+.left .expertise {
+  width: 80%;
+  height: auto;
+  padding: 50px;
+}
+
+.expertise {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.expertise h4 {
+  padding: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.expertise ul {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.expertise ul li {
+  margin-bottom: 30px;
+}
+
+.left .skills {
+  width: 80%;
+  height: auto;
+  padding: 50px;
+}
+
+.skills {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.skills h4 {
+  padding: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.skill {
+  margin: 15px 0;
+}
+.skill-name {
+  font-weight: bold;
+}
+.bar {
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 100%;
+  height: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.progress {
+  background-color: #181b18;
+  height: 100%;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.right {
   background-color: #ebebeb;
-  width: 60%; /* Kolom contact mengambil 40% lebar */
+  width: 60%;
   height: 100%;
 }
