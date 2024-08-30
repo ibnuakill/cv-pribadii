@@ -5,19 +5,17 @@
 }
 
 body {
-  font-family: "Bebas Nue", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .container {
   width: 100%;
-  height: 300vh;
   display: flex;
   flex-direction: column;
 }
 
 .title {
   padding: 5px;
-  padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 30px;
   letter-spacing: 2px;
@@ -29,17 +27,18 @@ body {
 .page-1 {
   background-color: #242225;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-wrap: wrap;
 }
 
-/* start of description */
+/* Description */
 .description {
-  width: 33.33%;
-  height: auto;
+  width: 100%;
   padding: 30px;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .description .nama {
@@ -47,108 +46,90 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px 20px;
+  margin: 20px;
 }
 
 .description .nama > h1 {
-  font-size: 6.5rem;
-  color: white;
+  font-size: 4rem;
 }
 
-.description .hr-1 {
-  width: 35%;
-  margin-top: 80px;
-  margin-left: 60px;
-  height: 0;
-}
-
+.description .hr-1,
 .description .hr-2 {
   width: 35%;
   margin-left: 60px;
-  height: 0;
 }
+
+.description .hr-1 {
+  margin-top: 40px;
+}
+
 .description > h2 {
-  font-size: 2.5rem;
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 0;
+  font-size: 2rem;
+  margin-top: 25px;
   padding-left: 60px;
 }
 
 .description > h3 {
-  font-size: 1.8rem;
-  color: white;
+  font-size: 1.5rem;
   margin-top: 10px;
-  margin-bottom: 0;
   padding-left: 60px;
 }
-/* end of description */
 
-/* start of foto */
+/* Foto */
 .foto {
-  width: 33.33%;
-  height: auto;
-  margin-bottom: 20px;
+  width: 100%;
   padding: 0 20px 20px 20px;
 }
 
 .foto > img {
   width: 100%;
-  height: 100%;
-}
-/* end of foto */
-
-/* start of bio */
-.bio {
-  width: 33.33%;
+  max-width: 400px;
   height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bio */
+.bio {
+  width: 100%;
   padding: 30px;
+  color: white;
 }
 
 .bio h2 {
-  margin-top: 70px;
-  font-size: 2.5rem;
-  color: white;
+  margin-top: 30px;
+  font-size: 2rem;
 }
 
 .bio p {
   font-size: 1rem;
-  color: white;
   margin-top: 10px;
   line-height: 2;
   text-align: justify;
 }
 
-/* end of page-1 */
-
 .page-2 {
   width: 100%;
-  height: 200vh;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .left {
   background-color: #e7dac7;
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  padding: 30px;
 }
 
-.left .contact {
-  width: 80%;
-  height: auto;
-  padding: 50px;
+.left .contact,
+.left .expertise,
+.left .skills {
+  width: 100%;
+  padding: 20px 0;
 }
 
-.contact {
-  padding: 10px;
-  width: 200px;
-  margin: 5px;
-}
-
-.contact hr {
+.contact hr,
+.expertise hr,
+.skills hr {
   border: 1px solid #000;
   margin-bottom: 15px;
 }
@@ -160,8 +141,8 @@ body {
 }
 
 .contact-item i {
-  font-size: 35px;
-  margin-right: 35px;
+  font-size: 24px;
+  margin-right: 15px;
 }
 
 .contact-text p {
@@ -173,106 +154,54 @@ body {
   font-weight: bold;
 }
 
-.left .expertise {
-  width: 80%;
-  height: auto;
-  padding: 50px;
-}
-
-.expertise {
-  width: 200px;
-  padding: 10px;
-  margin: 5px;
-}
-
 .expertise ul {
-  margin-right: 30px;
   margin-left: 20px;
 }
 
 .expertise ul li {
-  margin-bottom: 30px;
-}
-
-.left .skills {
-  width: 80%;
-  height: auto;
-  padding: 50px;
-}
-
-.skills {
-  width: 200px;
-  padding: 10px;
-  margin: 5px;
+  margin-bottom: 15px;
 }
 
 .skill {
   margin: 15px 0;
 }
+
 .skill-name {
   font-weight: bold;
 }
+
 .bar {
   background-color: #e0e0e0;
   border-radius: 2px;
   overflow: hidden;
   width: 100%;
   height: 10px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
 }
+
 .progress {
   background-color: #181b18;
   height: 100%;
   width: 70%;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
-/* page kanan */
+/* Right side */
 .right {
   background-color: #ebebeb;
-  width: 60%;
-  height: 100%;
-  flex-direction: column;
-  display: flex;
-}
-
-.right .education {
   width: 100%;
-  height: auto;
-  padding: 50px;
-  display: flex;
+  padding: 30px;
 }
 
-.education {
-  width: 300px;
-  padding: 10px;
-  margin: 5px;
-  flex-direction: column;
+.right .education,
+.right .work-experience {
+  width: 100%;
+  padding: 20px 0;
 }
 
 .column {
-  width: 48%; /* Atur lebar kolom */
-  padding: 10px;
-  display: inline-block;
-  height: auto;
-  line-height: 2;
-}
-
-.right .work-experience {
   width: 100%;
-  height: auto;
-  padding: 50px;
-  display: flex;
-}
-.work-experience {
-  width: 200px;
-  padding: 10px;
-  margin: 5px;
-  flex-direction: column;
-  display: flex;
+  padding: 10px 0;
+  line-height: 1.5;
 }
 
 .location {
@@ -281,26 +210,83 @@ body {
   justify-content: space-between;
 }
 
-.location p:nth-last-child(1) {
+.location p:last-child {
   font-size: 12px;
   font-weight: normal;
 }
+
 .location i {
   margin-right: 5px;
 }
 
 .company {
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
-.work-experience .bungkus {
-  margin-top: 100px;
+.work-content {
+  margin-top: 50px;
 }
 
 .text-description {
   font-size: 14px;
-  margin-top: 10px;
-  line-height: 2;
+  line-height: 1.5;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .page-1 {
+    flex-wrap: nowrap;
+  }
+
+  .description,
+  .foto,
+  .bio {
+    width: 33.33%;
+  }
+
+  .description .nama > h1 {
+    font-size: 5rem;
+  }
+
+  .page-2 {
+    flex-wrap: nowrap;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .right {
+    width: 60%;
+  }
+
+  .column {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .description .nama > h1 {
+    font-size: 6.5rem;
+  }
+
+  .description > h2 {
+    font-size: 2.5rem;
+  }
+
+  .description > h3 {
+    font-size: 1.8rem;
+  }
+
+  .bio h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-item i {
+    font-size: 35px;
+    margin-right: 35px;
+  }
 }
